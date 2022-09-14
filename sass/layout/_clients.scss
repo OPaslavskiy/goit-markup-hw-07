@@ -1,0 +1,30 @@
+.client__list {
+    display: flex;
+    gap: 30px;
+}
+
+.client__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--clien-icon);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    transition: border-color 250ms var(--time-cube);
+}
+
+.client__icon {
+    fill: var(--clien-icon);
+    transition: fill 250ms var(--time-cube);
+}
+
+.client__card:hover,
+.client__card:focus {
+    border-color: var(--accent-color);
+}
+
+.client__card:hover .client__icon,
+.client__card:focus .client__icon {
+    fill: var(--accent-color);
+}

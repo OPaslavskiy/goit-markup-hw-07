@@ -1,0 +1,15 @@
+.socialmedia__list {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.socialmedia__list a:hover,
+.socialmedia__list a:focus {
+  background-color: var(--accent-color);
+}
+
+

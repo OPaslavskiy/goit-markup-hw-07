@@ -454,70 +454,70 @@
     <!-- ==========Modal's Windows========== -->
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="order-modal">
-        <button type="button" class="btn-modal" data-modal-close>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
           <svg width="18px" height="18px">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
 
-        <form class="modal-form">
-          <p class="modal-form-titel">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="form">
+          <p class="modal__titel">Залиште свої дані, ми вам передзвонимо</p>
 
-          <label class="modal-form-label">
-            <span class="modal-form-label-imput">Ім'я</span>
-            <span class="modal-form-imput-icon">
+          <label class="label">
+            <span class="label__name">Ім'я</span>
+            <span class="lebel__wrapper">
               <input
                 type="text"
-                class="modal-form-user-input"
+                class="label__input"
                 name="user-name"
                 required
                 pattern="[a-zA-Zа-яА-ЯїЇіІ]+"
               />
-              <svg width="18px" height="18px" class="modal-form-icon">
+              <svg width="18px" height="18px" class="label__icon">
                 <use href="./images/sprite.svg#icon-person"></use>
               </svg>
             </span>
           </label>
 
-          <label class="modal-form-label">
-            <span class="modal-form-label-imput">Телефон</span>
-            <span class="modal-form-imput-icon">
-              <input type="tel" class="modal-form-user-input" name="user-tel" required />
-              <svg width="18px" height="18px" class="modal-form-icon">
+          <label class="label">
+            <span class="label__name">Телефон</span>
+            <span class="lebel__wrapper">
+              <input type="tel" class="label__input" name="user-tel" required />
+              <svg width="18px" height="18px" class="label__icon">
                 <use href="./images/sprite.svg#icon-phone-modal"></use>
               </svg>
             </span>
           </label>
 
-          <label class="modal-form-label">
-            <span class="modal-form-label-imput">Пошта</span>
-            <span class="modal-form-imput-icon">
-              <input type="email" class="modal-form-user-input" name="user-mail" required />
-              <svg width="18px" height="18px" class="modal-form-icon">
+          <label class="label">
+            <span class="label__name">Пошта</span>
+            <span class="lebel__wrapper">
+              <input type="email" class="label__input" name="user-mail" required />
+              <svg width="18px" height="18px" class="label__icon">
                 <use href="./images/sprite.svg#icon-leter-modal"></use>
               </svg>
             </span>
           </label>
 
-          <label class="modal-form-label modal-form-label-textarea">
-            <span class="modal-form-label-imput">Коментар</span>
+          <label class="label textarea">
+            <span class="label__name">Коментар</span>
             <textarea
               name="user-message"
-              class="modal-form-user-message"
+              class="label__textarea"
               placeholder="Введіть текст"
             ></textarea>
           </label>
 
-          <label class="modal-form-user-condition">
-            <input type="checkbox" class="modal-checkbox" required />
-            <span class="icon-checkbox"></span>
-            <span class="checkbox-text"
+          <label class="consent">
+            <input type="checkbox" class="consent__input" required />
+            <span class="conset__checkbox"></span>
+            <span class="consent__text"
               >Погоджуюся з розсилкою та приймаю
-              <a href="#" class="modal-form-user-condition-link">Умови договору</a>
+              <a href="#" class="consent__contract">Умови договору</a>
             </span></label
           >
-          <button type="submit" class="modal-form-btn-send">Відправити</button>
+          <button type="submit" class="button modal__button">Відправити</button>
         </form>
       </div>
     </div>

@@ -60,6 +60,14 @@
     outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     transition: border 250ms var(--time-cube);
+
+    &:focus-within {
+        border: 1px solid var(--accent-color);
+    }
+
+    &:focus-within+.label__icon {
+        fill: var(--accent-color);
+    }
 }
 
 .label__textarea {
@@ -72,15 +80,10 @@
     outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     transition: border 250ms var(--time-cube);
-}
 
-.label__input:focus-within,
-.label__textarea:focus-within {
-    border: 1px solid var(--accent-color);
-}
-
-.label__input:focus-within+.label__icon {
-    fill: var(--accent-color);
+    &:focus-within {
+        border: 1px solid var(--accent-color);
+    }
 }
 
 .consent__text {
@@ -105,6 +108,10 @@
 .consent__input {
     position: absolute;
     appearance: none;
+
+    &:checked+.conset__checkbox {
+        background-image: url(../images/checkbox-icon.svg);
+    }
 }
 
 .conset__checkbox {
@@ -113,10 +120,6 @@
     height: 15px;
     background-image: url(../images/checkbox-border.svg);
     transition: background-image 250ms var(--time-cube);
-}
-
-.consent__input:checked+.conset__checkbox {
-    background-image: url(../images/checkbox-icon.svg);
 }
 
 .modal__button {

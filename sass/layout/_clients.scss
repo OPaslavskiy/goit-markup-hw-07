@@ -12,6 +12,17 @@
     width: 170px;
     height: 92px;
     transition: border-color 250ms var(--time-cube);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
+
+    &:hover .client__icon,
+    &:focus .client__icon {
+            fill: var(--accent-color);
+    }
+
 }
 
 .client__icon {
@@ -19,12 +30,4 @@
     transition: fill 250ms var(--time-cube);
 }
 
-.client__card:hover,
-.client__card:focus {
-    border-color: var(--accent-color);
-}
 
-.client__card:hover .client__icon,
-.client__card:focus .client__icon {
-    fill: var(--accent-color);
-}

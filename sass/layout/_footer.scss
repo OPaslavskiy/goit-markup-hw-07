@@ -33,17 +33,14 @@
     margin-bottom: 0;
 }
 
-.adress__mail,
-.adress__tel {
+.adress__mail-tel {
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms var(--time-cube);
-}
 
-.adress__mail:hover,
-.adress__tel:hover,
-.adress__mail:focus,
-.adress__tel:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .join {
@@ -75,10 +72,10 @@
     color: #fff;
     box-shadow: 0px 4px 4p rgba(0, 0, 0, 0.15);
     transition: border 250ms var(--time-cube);
-}
 
-.sign-up__imput:focus-within {
-    border: 1px solid var(--accent-color);
+    &:focus-within {
+            border: 1px solid var(--accent-color);
+        }
 }
 
 .footer__button {
@@ -91,13 +88,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &::after {
+            display: inline-flex;
+            width: 24px;
+            height: 24px;
+            content: '';
+            background-image: url(../images/plane.svg);
+            margin-left: 10px;
+        }
 }
 
-.button__titel::after {
-    display: inline-flex;
-    width: 24px;
-    height: 24px;
-    content: '';
-    background-image: url(../images/plane.svg);
-    margin-left: 10px;
-}

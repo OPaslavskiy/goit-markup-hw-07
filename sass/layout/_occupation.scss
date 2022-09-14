@@ -13,10 +13,10 @@
     width: calc((100% - 60px) / 3);
     margin-right: 15px;
     margin-left: 15px;
-}
 
-.occupation__item:last-child {
-    margin-bottom: 0;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .occupation__titel {

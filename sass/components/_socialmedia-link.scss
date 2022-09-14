@@ -9,21 +9,17 @@
     justify-content: center;
     border-radius: 50%;
     transition: background-color 250ms var(--time-cube);
-}
+
+    &:hover, &:focus {background-color: var(--accent-color);}
+
+    &:hover .socialmedia__icon,
+    &:focus .socialmedia__icon {fill: #fff;}
+ }
 
 .socialmedia__link--grey {
         background-color: rgba(255, 255, 255, 0.1);
     }
 
-.socialmedia__link:hover .socialmedia__icon,
-.socialmedia__link:focus .socialmedia__icon {
-    fill: #fff;
-}
-
-.socialmedia__link:hover,
-.socialmedia__link:focus {
-    background-color: var(--accent-color);
-}
 
 .socialmedia__icon {
     fill: var(--clien-icon);

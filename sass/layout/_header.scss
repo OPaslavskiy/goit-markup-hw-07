@@ -1,7 +1,13 @@
+
 .header {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #ececec;
+}
+
+.header .conteiner {
+    display: flex;
+    align-items: center;
 }
 
 .navigation,
@@ -63,11 +69,8 @@
 .contact {
     display: flex;
     margin-left: auto;
-}
-
-.contact {
     padding-top: 32px;
-    padding-bottom: 32px;
+        padding-bottom: 32px;
 }
 
 .contact__item:first-child {
@@ -77,6 +80,10 @@
 .contact__mail-tel {
     display: flex;
     align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
 }
 
 .contact__icon {
@@ -91,13 +98,6 @@
 .contact__mail-tel:focus .contact__icon,
 .contact__mail-tel:hover .contact__icon {
     fill: var(--accent-color);
-}
-
-.contact__mail-tel {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
 }
 
 .navigation__link,
